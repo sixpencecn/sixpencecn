@@ -39,14 +39,10 @@ def answer(question: str) -> str:
   <img src="https://skillicons.dev/icons?i=python,fastapi,pytorch,docker,postgres,redis,linux,git,typescript,react&theme=dark&perline=10" alt="Python, FastAPI, PyTorch, Docker, PostgreSQL, Redis, Linux, Git, TypeScript, React" />
 </p>
 
-## GitHub
+## Now
 
-<div align="center">
-
-  <img alt="GitHub stats" height="165" src="https://github-readme-stats.vercel.app/api?username=sixpencecn&show_icons=true&hide_border=true&bg_color=0D1117&title_color=2F81F7&icon_color=2F81F7&text_color=8B98B0&count_private=true" />
-  <img alt="Top languages" height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sixpencecn&layout=compact&hide_border=true&bg_color=0D1117&title_color=2F81F7&text_color=8B98B0" />
-
-</div>
+- Shipping a small agent runtime — tool calling, bounded loops, trace logging
+- Writing an evaluation harness I can actually trust before adding more features
 
 ## Connect
 
