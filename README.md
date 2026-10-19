@@ -33,6 +33,33 @@ def answer(question: str) -> str:
 - **Retrieval that holds up** — chunking, hybrid search, and measuring whether the retrieved context was actually right
 - **Evaluation & observability** — offline suites, trace review, and knowing *why* an answer failed
 
+## Featured
+
+<table>
+  <tr>
+    <td width="47%" valign="middle">
+      <a href="https://sixpencecn.github.io/neon-snake/">
+        <img src="./assets/neon-snake.png" alt="Neon Snake — gameplay" width="100%" />
+      </a>
+    </td>
+    <td width="53%" valign="top">
+      <h3><a href="https://sixpencecn.github.io/neon-snake/">Neon Snake</a></h3>
+      <p>
+        A dependency-free canvas Snake, built for feel rather than for a framework:
+        interpolated motion on a fixed-step simulation, a two-deep input buffer so fast
+        turns are never dropped, runtime-synthesised audio, and touch controls.
+      </p>
+      <p>
+        Three files, no build step, and 19 assertions that actually run.
+      </p>
+      <p>
+        <a href="https://sixpencecn.github.io/neon-snake/"><img alt="Play Neon Snake" src="https://img.shields.io/badge/PLAY-2F81F7?style=for-the-badge&logo=html5&logoColor=white" /></a>
+        <a href="https://github.com/sixpencecn/neon-snake"><img alt="Source" src="https://img.shields.io/badge/SOURCE-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## Toolkit
 
 <p align="left">
