@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.svg" alt="sixpencecn — AI Engineer, LLM applications and agent systems" width="100%" />
+  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@main/assets/banner.svg" alt="sixpencecn — AI Engineer, LLM applications and agent systems" width="100%" />
 </div>
 
 <br/>
@@ -39,7 +39,7 @@ def answer(question: str) -> str:
   <tr>
     <td width="47%" valign="middle">
       <a href="https://sixpencecn.github.io/neon-snake/">
-        <img src="./assets/neon-snake.png" alt="Neon Snake — gameplay" width="100%" />
+        <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@main/assets/neon-snake.png" alt="Neon Snake — gameplay" width="100%" />
       </a>
     </td>
     <td width="53%" valign="top">
