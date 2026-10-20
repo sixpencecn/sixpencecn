@@ -60,6 +60,17 @@ def answer(question: str) -> str:
   </tr>
 </table>
 
+### Product specification
+
+The same project ships with a full PRD rather than a feature list — problem framing with
+evidence, eight explicit non-goals, P0 requirements written as `Given/When/Then`, a
+three-layer metric tree with counter-metrics, RICE scoring, a trade-off matrix where every
+option has a decisive reason, and a rollout plan that states its rollback SLA.
+
+<a href="https://github.com/sixpencecn/neon-snake/blob/main/docs/PRD.md"><img alt="Read the PRD" src="https://img.shields.io/badge/READ%20THE%20PRD-2F81F7?style=for-the-badge&logo=readthedocs&logoColor=white" /></a>
+<img alt="12 sections" src="https://img.shields.io/badge/12%20SECTIONS-181717?style=for-the-badge" />
+<img alt="6 ADRs" src="https://img.shields.io/badge/6%20ADRs-181717?style=for-the-badge" />
+
 ## Toolkit
 
 <p align="left">
