@@ -1,96 +1,166 @@
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@main/assets/banner.svg" alt="sixpencecn — AI Engineer, LLM applications and agent systems" width="100%" />
-</div>
-
-<br/>
-
-<div align="center">
-
-  <a href="https://github.com/sixpencecn"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-sixpencecn-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <img alt="Focus" src="https://img.shields.io/badge/FOCUS-LLM%20APPLICATIONS-2F81F7?style=for-the-badge" />
-  <img alt="Profile views" src="https://komarev.com/ghpvc/?username=sixpencecn&style=for-the-badge&color=2F81F7&label=VIEWS" />
-
-</div>
-
-## Hi, I'm sixpencecn
-
-I build **LLM-powered applications** — agent orchestration, retrieval pipelines, and the
-unglamorous tooling that keeps them dependable once real users show up.
-
-I care more about evaluation, failure modes and cost per answer than about demo-day magic.
-
-```python
-@pipeline
-def answer(question: str) -> str:
-    context = retrieve(question, k=8)        # grounding beats guessing
-    draft   = synthesize(question, context)
-    return verify(draft) or escalate(question)
-```
-
-## Focus
-
-- **Agent systems** — tool use, planning loops, and the guardrails that keep them bounded
-- **Retrieval that holds up** — chunking, hybrid search, and measuring whether the retrieved context was actually right
-- **Evaluation & observability** — offline suites, trace review, and knowing *why* an answer failed
-
-## Featured
-
-<table>
-  <tr>
-    <td width="47%" valign="middle">
-      <a href="https://sixpencecn.github.io/neon-snake/">
-        <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@main/assets/neon-snake.png" alt="Neon Snake — gameplay" width="100%" />
-      </a>
-    </td>
-    <td width="53%" valign="top">
-      <h3><a href="https://sixpencecn.github.io/neon-snake/">Neon Snake</a></h3>
-      <p>
-        A dependency-free canvas Snake, built for feel rather than for a framework:
-        interpolated motion on a fixed-step simulation, a two-deep input buffer so fast
-        turns are never dropped, runtime-synthesised audio, and touch controls.
-      </p>
-      <p>
-        Three files, no build step, and 19 assertions that actually run.
-      </p>
-      <p>
-        <a href="https://sixpencecn.github.io/neon-snake/"><img alt="Play Neon Snake" src="https://img.shields.io/badge/PLAY-2F81F7?style=for-the-badge&logo=html5&logoColor=white" /></a>
-        <a href="https://github.com/sixpencecn/neon-snake"><img alt="Source" src="https://img.shields.io/badge/SOURCE-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-      </p>
-    </td>
-  </tr>
-</table>
-
-### Product specification
-
-The same project ships with a full PRD rather than a feature list — problem framing with
-evidence, eight explicit non-goals, P0 requirements written as `Given/When/Then`, a
-three-layer metric tree with counter-metrics, RICE scoring, a trade-off matrix where every
-option has a decisive reason, and a rollout plan that states its rollback SLA.
-
-<a href="https://github.com/sixpencecn/neon-snake/blob/main/docs/PRD.md"><img alt="Read the PRD" src="https://img.shields.io/badge/READ%20THE%20PRD-2F81F7?style=for-the-badge&logo=readthedocs&logoColor=white" /></a>
-<img alt="12 sections" src="https://img.shields.io/badge/12%20SECTIONS-181717?style=for-the-badge" />
-<img alt="6 ADRs" src="https://img.shields.io/badge/6%20ADRs-181717?style=for-the-badge" />
-
-## Toolkit
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=python,fastapi,pytorch,docker,postgres,redis,linux,git,typescript,react&theme=dark&perline=10" alt="Python, FastAPI, PyTorch, Docker, PostgreSQL, Redis, Linux, Git, TypeScript, React" />
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@main/assets/banner.svg" alt="sixpencecn // AI engineer · computer vision · LLM applications" width="100%" />
 </p>
 
-## Now
+<p align="center">
+  <img alt="STATUS ONLINE · FOCUS rotating · MODE LOCAL FIRST · BUILD STABLE" src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@main/assets/badges.svg" />
+</p>
 
-- Shipping a small agent runtime — tool calling, bounded loops, trace logging
-- Writing an evaluation harness I can actually trust before adding more features
+<p align="center">
+  <a href="https://github.com/sixpencecn"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-sixpencecn-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <img alt="Followers" src="https://img.shields.io/github/followers/sixpencecn?style=for-the-badge&logo=github&logoColor=white&color=2F81F7&label=followers" />
+  <img alt="Profile views" src="https://komarev.com/ghpvc/?username=sixpencecn&style=for-the-badge&color=2F81F7&label=VIEWS" />
+</p>
 
-## Connect
+```console
+sixpencecn@github:~$ whoami
+AI 工程师 — 工业视觉 / LLM 应用 / 能落地的产品工具
 
-<div align="center">
+sixpencecn@github:~$ cat focus.txt
+› 能在真实光照下活下来的视觉算法，不是只会跑 demo 的
+› 指标可以复现、可以追溯、可以被人挑刺
+› 交付物要能直接上产线，或者直接打开就能玩
 
-  <a href="https://github.com/sixpencecn"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/sixpencecn/sixpencecn/issues/new"><img alt="Open an issue" src="https://img.shields.io/badge/Open%20an%20issue-2F81F7?style=for-the-badge&logo=github&logoColor=white" /></a>
+sixpencecn@github:~$ ls projects/
+glue-defect-detection-yolov8/   qingxu-workbench/
+neon-snake/                     item-snake/   tcp-debug/
+```
 
-</div>
+---
 
-<br/>
+### ▍01 // GLUE DEFECT DETECTION · 工业胶路缺陷检测
 
-<p align="center"><sub>Always measuring. Rarely guessing.</sub></p>
+> 锂电池封装打胶工序的 YOLOv8 质检系统。针对 2.5D 光源下的胶面反光与光照波动，
+> 从图像采集、预处理、标注、训练、推理到 Excel 追溯，完整工程闭环。
+
+**4 类判定**：`OK` / `断胶` / `缺胶` / `溢胶` —— 对应产线实际判定标准。
+
+真实基线（合成数据集，YOLOv8n / imgsz 320 / CPU / 3 轮冒烟测试）：
+
+| 指标 | 数值 |
+| :--- | ---: |
+| Precision | 0.9202 |
+| Recall | 0.8972 |
+| mAP@0.5 | 0.9739 |
+| mAP@0.5:0.95 | 0.6718 |
+
+评测口径：每类 60 张、共 240 张合成图，按 168/48/24 划分，`--seed 42`。
+该结果用于验证数据标注正确、模型可收敛；正式精度需将 epochs 提升至 100 重新训练。
+
+<p align="center">
+  <a href="https://github.com/sixpencecn/glue-defect-detection-yolov8"><img src="https://img.shields.io/badge/%E6%9F%A5%E7%9C%8B%E6%BA%90%E7%A0%81-glue--defect--detection--yolov8-0B1020?style=for-the-badge&logo=github&logoColor=2F81F7" alt="repo" /></a>
+  <img src="https://img.shields.io/badge/YOLOv8-Ultralytics-2F81F7?style=for-the-badge&logo=ultralytics&logoColor=white" alt="yolov8" />
+  <img src="https://img.shields.io/badge/PyQt5-GUI-22D3EE?style=for-the-badge&logo=python&logoColor=white" alt="pyqt" />
+</p>
+
+---
+
+### ▍02 // QINGXU WORKBENCH · 轻序个人工作台
+
+<p align="center">
+  <a href="https://github.com/sixpencecn/qingxu-workbench">
+    <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@main/assets/qingxu-workbench.svg" alt="Qingxu workbench — dashboard preview" width="88%" />
+  </a>
+</p>
+
+| | |
+| :--- | :--- |
+| **本地优先** | 数据仅存浏览器，不上传；离线可用，安装为 PWA |
+| **一站式** | 日程 · 待办 · 打卡 · 专注 · 记账 · 相册日记 |
+| **多端交付** | 桌面安装 + Android APK（v1.1） |
+| **设计克制** | 青绿单色系、响应式，移动端底部导航 |
+
+<p align="center">
+  <a href="https://github.com/sixpencecn/qingxu-workbench"><b>▸ 查看源码</b></a>
+</p>
+
+---
+
+### ▍03 // NEON SNAKE · 有手感的贪吃蛇
+
+<p align="center">
+  <a href="https://sixpencecn.github.io/neon-snake/">
+    <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@main/assets/neon-snake.png" alt="Neon Snake gameplay" width="88%" />
+  </a>
+</p>
+
+| | |
+| :--- | :--- |
+| **零依赖** | Canvas + ES modules，三个文件，无构建步骤 |
+| **手感细节** | 插值移动、两级输入缓冲、运行时合成音效、触控支持 |
+| **可测试** | `game.js` 无 DOM、可设种子；19 条断言在浏览器直接运行 |
+| **有规格** | [PRD v2.0](https://github.com/sixpencecn/neon-snake/blob/main/docs/PRD-v2.0.md)：17 节，含指标树、验收标准与终止条件 |
+
+<p align="center">
+  <a href="https://sixpencecn.github.io/neon-snake/"><b>▶ 立即试玩</b></a> · <a href="https://github.com/sixpencecn/neon-snake">源码</a>
+</p>
+
+---
+
+### ▍04 // TOOLING · 小工具
+
+| 项目 | 是什么 |
+| :--- | :--- |
+| **[tcp-debug](https://github.com/sixpencecn/tcp-debug)** | 浏览器 TCP 调试助手：客户端/服务端双模式，UTF-8/GBK/ASCII/HEX 编解码，SSE 实时日志 |
+| **[item-snake](https://github.com/sixpencecn/item-snake)** | PRD 3.0 道具贪吃蛇：苹果 / 减速 / 加速 / 减身 / 毒药 / 双倍分数 |
+
+---
+
+### ▍SYS.MONITOR · 数据面板
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@main/assets/stats.svg" alt="repository metrics" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-0B1020?style=flat-square&logo=python&logoColor=2F81F7" alt="python" />
+  <img src="https://img.shields.io/badge/PyTorch-0B1020?style=flat-square&logo=pytorch&logoColor=22D3EE" alt="pytorch" />
+  <img src="https://img.shields.io/badge/OpenCV-0B1020?style=flat-square&logo=opencv&logoColor=2F81F7" alt="opencv" />
+  <img src="https://img.shields.io/badge/JavaScript-0B1020?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="javascript" />
+  <img src="https://img.shields.io/badge/React-0B1020?style=flat-square&logo=react&logoColor=22D3EE" alt="react" />
+  <img src="https://img.shields.io/badge/PWA-0B1020?style=flat-square&logo=pwa&logoColor=8B5CF6" alt="pwa" />
+  <img src="https://img.shields.io/badge/Docker-0B1020?style=flat-square&logo=docker&logoColor=2F81F7" alt="docker" />
+  <img src="https://img.shields.io/badge/Git-0B1020?style=flat-square&logo=git&logoColor=F05032" alt="git" />
+</p>
+
+---
+
+### ▍ABOUT · 关于我
+
+- **走 AI 主线** — 从 YOLOv8 工业缺陷检测到 LLM 应用，不做只会跑 demo 的研究
+- **工程闭环** — 数据、训练、推理、报表、界面，交付物要能被真实使用
+- **产品意识** — 本地优先、零依赖、可离线，写成能双击打开的小工具
+- **重视度量** — 评测口径、失败模式、单帧耗时，比 demo 的华丽更重要
+
+---
+
+### ▍NOW · 正在做
+
+- 搭一个小型 agent runtime：工具调用、有界循环、trace 日志
+- 写一套自己敢信的评测框架，再考虑加新功能
+- 把工业视觉项目从原型推向部署
+
+---
+
+<p align="center">
+  <a href="https://github.com/sixpencecn"><img src="https://img.shields.io/badge/GitHub-sixpencecn-181717?style=for-the-badge&logo=github&logoColor=white" alt="github" /></a>
+  <a href="https://github.com/sixpencecn/sixpencecn/issues/new"><img src="https://img.shields.io/badge/Open%20an%20issue-2F81F7?style=for-the-badge&logo=github&logoColor=white" alt="issue" /></a>
+</p>
+
+<details>
+<summary><b>EN · Read in English</b></summary>
+
+<br>
+
+**sixpencecn** — AI engineer. Industrial vision, LLM applications, and tools that actually ship.
+
+- **Glue Defect Detection** — YOLOv8 QC for lithium-battery sealing lines. 4 defect classes, full loop from data to PyQt5 GUI and Excel traceability. Smoke-test baseline: Precision 0.9202, Recall 0.8972, mAP@0.5 0.9739 (3 epochs on 240 synthetic images — a convergence check, not final accuracy).
+- **Qingxu Workbench** — a local-first personal dashboard: calendar, todos, habits, pomodoro, finance and photo journal. Offline PWA, data stays in the browser, installable on desktop and Android.
+- **Neon Snake** — a dependency-free canvas Snake with interpolated motion, a two-deep input buffer, synthesised audio, touch controls and a 19-assertion browser test suite. [Play it](https://sixpencecn.github.io/neon-snake/).
+- **tcp-debug / item-snake** — a browser TCP debugging assistant, and a PRD-driven Snake with power-ups.
+
+I care about evaluation, failure modes, and tools that work offline. Always measuring, rarely guessing.
+
+</details>
+
+<p align="center"><sub>BUILD 2026.11 · LOCAL-FIRST · EVALUATION-FIRST · NO CLOUD REQUIRED</sub></p>
