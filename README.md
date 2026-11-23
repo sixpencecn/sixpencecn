@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@3f4b098/assets/banner.svg" alt="sixpencecn // AI engineer · computer vision · LLM applications" width="100%" />
+  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/banner.svg" alt="sixpencecn // AI engineer · computer vision · LLM applications" width="100%" />
 </p>
 
 <p align="center">
-  <img alt="STATUS ONLINE · FOCUS rotating · MODE LOCAL FIRST · BUILD STABLE" src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@3f4b098/assets/badges.svg" />
+  <img alt="STATUS ONLINE · FOCUS rotating · MODE LOCAL FIRST · BUILD STABLE" src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/badges.svg" />
 </p>
 
 <p align="center">
@@ -35,6 +35,19 @@ neon-snake/                     item-snake/   tcp-debug/
 
 **4 类判定**：`OK` / `断胶` / `缺胶` / `溢胶` —— 对应产线实际判定标准。
 
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/sample_synthetic.png" alt="四类胶路样本：OK / 断胶 / 缺胶 / 溢胶" width="100%" />
+      <br/><sub>合成样本：四类胶路形态</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/detect_preview.png" alt="断胶检测推理结果，置信度 0.98" width="100%" />
+      <br/><sub>推理结果：断胶 0.98</sub>
+    </td>
+  </tr>
+</table>
+
 真实基线（合成数据集，YOLOv8n / imgsz 320 / CPU / 3 轮冒烟测试）：
 
 | 指标 | 数值 |
@@ -48,6 +61,11 @@ neon-snake/                     item-snake/   tcp-debug/
 该结果用于验证数据标注正确、模型可收敛；正式精度需将 epochs 提升至 100 重新训练。
 
 <p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/training_results.png" alt="3 轮冒烟测试的损失与指标曲线" width="88%" />
+  <br/><sub>训练曲线：box/cls/dfl loss 与 precision / recall / mAP（3 轮冒烟测试）</sub>
+</p>
+
+<p align="center">
   <a href="https://github.com/sixpencecn/glue-defect-detection-yolov8"><img src="https://img.shields.io/badge/%E6%9F%A5%E7%9C%8B%E6%BA%90%E7%A0%81-glue--defect--detection--yolov8-0B1020?style=for-the-badge&logo=github&logoColor=2F81F7" alt="repo" /></a>
   <img src="https://img.shields.io/badge/YOLOv8-Ultralytics-2F81F7?style=for-the-badge&logo=ultralytics&logoColor=white" alt="yolov8" />
   <img src="https://img.shields.io/badge/PyQt5-GUI-22D3EE?style=for-the-badge&logo=python&logoColor=white" alt="pyqt" />
@@ -59,7 +77,7 @@ neon-snake/                     item-snake/   tcp-debug/
 
 <p align="center">
   <a href="https://github.com/sixpencecn/qingxu-workbench">
-    <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@3f4b098/assets/qingxu-workbench.svg" alt="Qingxu workbench — dashboard preview" width="88%" />
+    <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/qingxu-workbench.svg" alt="Qingxu workbench — dashboard preview" width="88%" />
   </a>
 </p>
 
@@ -80,7 +98,7 @@ neon-snake/                     item-snake/   tcp-debug/
 
 <p align="center">
   <a href="https://sixpencecn.github.io/neon-snake/">
-    <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@3f4b098/assets/neon-snake.png" alt="Neon Snake gameplay" width="88%" />
+    <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/neon-snake.png" alt="Neon Snake gameplay" width="88%" />
   </a>
 </p>
 
@@ -109,7 +127,7 @@ neon-snake/                     item-snake/   tcp-debug/
 ### ▍SYS.MONITOR · 数据面板
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@3f4b098/assets/stats.svg" alt="repository metrics" width="100%" />
+  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/stats.svg" alt="repository metrics" width="100%" />
 </p>
 
 <p align="center">
