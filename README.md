@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@main/assets/banner.svg" alt="sixpencecn // AI engineer · computer vision · LLM applications" width="100%" />
+  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@3f4b098/assets/banner.svg" alt="sixpencecn // AI engineer · computer vision · LLM applications" width="100%" />
 </p>
 
 <p align="center">
-  <img alt="STATUS ONLINE · FOCUS rotating · MODE LOCAL FIRST · BUILD STABLE" src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@main/assets/badges.svg" />
+  <img alt="STATUS ONLINE · FOCUS rotating · MODE LOCAL FIRST · BUILD STABLE" src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@3f4b098/assets/badges.svg" />
 </p>
 
 <p align="center">
@@ -59,7 +59,7 @@ neon-snake/                     item-snake/   tcp-debug/
 
 <p align="center">
   <a href="https://github.com/sixpencecn/qingxu-workbench">
-    <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@main/assets/qingxu-workbench.svg" alt="Qingxu workbench — dashboard preview" width="88%" />
+    <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@3f4b098/assets/qingxu-workbench.svg" alt="Qingxu workbench — dashboard preview" width="88%" />
   </a>
 </p>
 
@@ -80,7 +80,7 @@ neon-snake/                     item-snake/   tcp-debug/
 
 <p align="center">
   <a href="https://sixpencecn.github.io/neon-snake/">
-    <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@main/assets/neon-snake.png" alt="Neon Snake gameplay" width="88%" />
+    <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@3f4b098/assets/neon-snake.png" alt="Neon Snake gameplay" width="88%" />
   </a>
 </p>
 
@@ -109,7 +109,7 @@ neon-snake/                     item-snake/   tcp-debug/
 ### ▍SYS.MONITOR · 数据面板
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@main/assets/stats.svg" alt="repository metrics" width="100%" />
+  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@3f4b098/assets/stats.svg" alt="repository metrics" width="100%" />
 </p>
 
 <p align="center">
