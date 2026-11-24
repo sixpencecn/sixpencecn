@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/banner.svg" alt="sixpencecn // AI engineer · computer vision · LLM applications" width="100%" />
+  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@f6d06ff/assets/banner.svg" alt="sixpencecn // AI engineer · computer vision · LLM applications" width="100%" />
 </p>
 
 <p align="center">
-  <img alt="STATUS ONLINE · FOCUS rotating · MODE LOCAL FIRST · BUILD STABLE" src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/badges.svg" />
+  <img alt="STATUS ONLINE · FOCUS rotating · MODE LOCAL FIRST · BUILD STABLE" src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@f6d06ff/assets/badges.svg" />
 </p>
 
 <p align="center">
@@ -22,8 +22,9 @@ sixpencecn@github:~$ cat focus.txt
 › 交付物要能直接上产线，或者直接打开就能玩
 
 sixpencecn@github:~$ ls projects/
-glue-defect-detection-yolov8/   qingxu-workbench/
-neon-snake/                     item-snake/   tcp-debug/
+glue-defect-detection-yolov8/   PCB-Defect-Detection-YOLOv8/
+qingxu-workbench/               neon-snake/
+tcp-debug/                      item-snake/
 ```
 
 ---
@@ -38,11 +39,11 @@ neon-snake/                     item-snake/   tcp-debug/
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/sample_synthetic.png" alt="四类胶路样本：OK / 断胶 / 缺胶 / 溢胶" width="100%" />
+      <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@f6d06ff/assets/sample_synthetic.png" alt="四类胶路样本：OK / 断胶 / 缺胶 / 溢胶" width="100%" />
       <br/><sub>合成样本：四类胶路形态</sub>
     </td>
     <td width="50%" align="center">
-      <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/detect_preview.png" alt="断胶检测推理结果，置信度 0.98" width="100%" />
+      <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@f6d06ff/assets/detect_preview.png" alt="断胶检测推理结果，置信度 0.98" width="100%" />
       <br/><sub>推理结果：断胶 0.98</sub>
     </td>
   </tr>
@@ -61,7 +62,7 @@ neon-snake/                     item-snake/   tcp-debug/
 该结果用于验证数据标注正确、模型可收敛；正式精度需将 epochs 提升至 100 重新训练。
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/training_results.png" alt="3 轮冒烟测试的损失与指标曲线" width="88%" />
+  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@f6d06ff/assets/training_results.png" alt="3 轮冒烟测试的损失与指标曲线" width="88%" />
   <br/><sub>训练曲线：box/cls/dfl loss 与 precision / recall / mAP（3 轮冒烟测试）</sub>
 </p>
 
@@ -73,11 +74,46 @@ neon-snake/                     item-snake/   tcp-debug/
 
 ---
 
-### ▍02 // QINGXU WORKBENCH · 轻序个人工作台
+### ▍02 // PCB DEFECT DETECTION · PCB 电路板缺陷检测
+
+> 基于 YOLOv8 与 DeepPCB 数据集的 PCB 缺陷检测系统。覆盖 **6 类**真实缺陷：
+> 开路 / 短路 / 针孔 / 毛刺 / 鼠咬 / 伪铜，含 PyQt5 可视化界面、批量检测与 Excel 质检报表。
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@f6d06ff/assets/demo_open_12100003.jpg" alt="PCB 检测结果：短路/伪铜/针孔/鼠咬" width="100%" />
+      <br/><sub>多类同帧：短路 0.44 / 伪铜 0.91 / 针孔 0.68 / 鼠咬 0.91</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@f6d06ff/assets/demo_mousebite_12100023.jpg" alt="PCB 检测结果：开路/短路/毛刺/伪铜/针孔" width="100%" />
+      <br/><sub>多类同帧：开路 0.52 / 毛刺 0.35 / 伪铜 0.85 / 针孔 0.94</sub>
+    </td>
+  </tr>
+</table>
+
+真实测试指标（YOLOv8n / CPU / 30 epochs / batch 16 / imgsz 320）：
+
+| 指标 | 数值 |
+| :--- | ---: |
+| Precision | 0.8934 |
+| Recall | 0.7825 |
+| mAP@0.5 | 0.8763 |
+| mAP@0.5:0.95 | 0.6024 |
+
+<p align="center">
+  <a href="https://github.com/sixpencecn/PCB-Defect-Detection-YOLOv8"><img src="https://img.shields.io/badge/%E6%9F%A5%E7%9C%8B%E6%BA%90%E7%A0%81-PCB--Defect--Detection--YOLOv8-0B1020?style=for-the-badge&logo=github&logoColor=2F81F7" alt="repo" /></a>
+  <img src="https://img.shields.io/badge/YOLOv8-Ultralytics-2F81F7?style=for-the-badge&logo=ultralytics&logoColor=white" alt="yolov8" />
+  <img src="https://img.shields.io/badge/PyQt5-GUI-22D3EE?style=for-the-badge&logo=python&logoColor=white" alt="pyqt" />
+</p>
+
+---
+
+### ▍03 // QINGXU WORKBENCH · 轻序个人工作台
 
 <p align="center">
   <a href="https://github.com/sixpencecn/qingxu-workbench">
-    <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/qingxu-workbench.svg" alt="Qingxu workbench — dashboard preview" width="88%" />
+    <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@f6d06ff/assets/qingxu-workbench.svg" alt="Qingxu workbench — dashboard preview" width="88%" />
   </a>
 </p>
 
@@ -94,11 +130,11 @@ neon-snake/                     item-snake/   tcp-debug/
 
 ---
 
-### ▍03 // NEON SNAKE · 有手感的贪吃蛇
+### ▍04 // NEON SNAKE · 有手感的贪吃蛇
 
 <p align="center">
   <a href="https://sixpencecn.github.io/neon-snake/">
-    <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/neon-snake.png" alt="Neon Snake gameplay" width="88%" />
+    <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@f6d06ff/assets/neon-snake.png" alt="Neon Snake gameplay" width="88%" />
   </a>
 </p>
 
@@ -115,7 +151,7 @@ neon-snake/                     item-snake/   tcp-debug/
 
 ---
 
-### ▍04 // TOOLING · 小工具
+### ▍05 // TOOLING · 小工具
 
 | 项目 | 是什么 |
 | :--- | :--- |
@@ -127,7 +163,7 @@ neon-snake/                     item-snake/   tcp-debug/
 ### ▍SYS.MONITOR · 数据面板
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@afb9983/assets/stats.svg" alt="repository metrics" width="100%" />
+  <img src="https://cdn.jsdelivr.net/gh/sixpencecn/sixpencecn@f6d06ff/assets/stats.svg" alt="repository metrics" width="100%" />
 </p>
 
 <p align="center">
@@ -145,7 +181,7 @@ neon-snake/                     item-snake/   tcp-debug/
 
 ### ▍ABOUT · 关于我
 
-- **走 AI 主线** — 从 YOLOv8 工业缺陷检测到 LLM 应用，不做只会跑 demo 的研究
+- **走 AI 主线** — 从胶路 / PCB 工业缺陷检测到 LLM 应用，不做只会跑 demo 的研究
 - **工程闭环** — 数据、训练、推理、报表、界面，交付物要能被真实使用
 - **产品意识** — 本地优先、零依赖、可离线，写成能双击打开的小工具
 - **重视度量** — 评测口径、失败模式、单帧耗时，比 demo 的华丽更重要
@@ -173,6 +209,7 @@ neon-snake/                     item-snake/   tcp-debug/
 **sixpencecn** — AI engineer. Industrial vision, LLM applications, and tools that actually ship.
 
 - **Glue Defect Detection** — YOLOv8 QC for lithium-battery sealing lines. 4 defect classes, full loop from data to PyQt5 GUI and Excel traceability. Smoke-test baseline: Precision 0.9202, Recall 0.8972, mAP@0.5 0.9739 (3 epochs on 240 synthetic images — a convergence check, not final accuracy).
+- **PCB Defect Detection** — YOLOv8 on the DeepPCB dataset: 6 classes (open / short / pinhole / burr / mousebite / spurious copper), PyQt5 GUI, batch inference and Excel reports. Test metrics: Precision 0.8934, Recall 0.7825, mAP@0.5 0.8763 (30 epochs on CPU).
 - **Qingxu Workbench** — a local-first personal dashboard: calendar, todos, habits, pomodoro, finance and photo journal. Offline PWA, data stays in the browser, installable on desktop and Android.
 - **Neon Snake** — a dependency-free canvas Snake with interpolated motion, a two-deep input buffer, synthesised audio, touch controls and a 19-assertion browser test suite. [Play it](https://sixpencecn.github.io/neon-snake/).
 - **tcp-debug / item-snake** — a browser TCP debugging assistant, and a PRD-driven Snake with power-ups.
